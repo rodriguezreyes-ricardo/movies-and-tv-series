@@ -1,0 +1,789 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1;
+    color: #666666;
+    height: 100%;
+    background: #f8f8f8 url(../img/fondo.png) repeat-x;
+    font-family: "opensans-regular";
+    font-size: 11px;
+}
+
+html {
+    height: 100%;
+	min-width:330px;
+}
+@font-face {font-family:
+    "tahoma-regular";
+    src:
+    url("../fonts/tahoma.eot");
+    src:
+    url("../fonts/tahoma.eot?#iefix") format("embedded-opentype"), url("../fonts/tahoma.woff") format("woff"), url("../fonts/tahoma.ttf") format("truetype"), url("../fonts/tahoma.svg#tahoma") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {font-family:
+    "opensans-regular";
+    src:
+    url("../fonts/opensans-regular.eot");
+    src:
+    url("../fonts/opensans-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-regular.woff") format("woff"), url("../fonts/opensans-regular.ttf") format("truetype"), url("../fonts/opensans-regular.svg#opensans-regular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+a {
+    color: #333333;
+}
+
+a img {
+    border: none;
+}
+
+.oculta {
+    display: none;
+}
+
+.clear {
+    clear: both;
+}
+
+p.bodytext {
+    margin: 5px 0px;
+}
+
+h1 {
+    margin: 0 0 0.5em;
+    font-size: 1.2em;
+    line-height: 1.2;
+    color: #333333;
+    font-weight: bold;
+    clear: both;
+}
+
+h2, h2.title {
+    clear: both;
+    margin: 0px 0px 12px 0px;
+    font-size: 1.5em;
+    line-height: 1.3;
+    color: #333333;
+}
+
+#otrosizq h2 {
+    clear: both;
+    margin: 1.2em 0 0;
+    font-size: 1.3em;
+    font-weight: bold;
+    line-height: 1.3;
+    margin: 0px;
+    padding-left: 20px;
+    border-left: 1px solid #B1B1B1;
+    border-right: 1px solid #B1B1B1;
+}
+
+#encabezado, #encabezado_materias {
+    max-width: 540px;
+    float: right;
+}
+
+#encabezado h1, #encabezado h2, #encabezado_materias h1, #encabezado_materias h2 {
+    float: left;
+    clear: none;
+    padding: 0;
+    font-weight: normal;
+    font-size: 1.5em;
+}
+
+#encabezado h1, #encabezado_materias h1, .tx-ttproducts-pi1 h1 {
+    color: #000000;
+    margin: 2px 0px 0px 0px;
+}
+
+#encabezado h2, #encabezado_materias h2 {
+    color: #666666;
+    margin: 2px 0px 0px 5px;
+}
+
+h3 {
+    margin: 0.5em 0 0;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+h3.subtitle {
+    margin: 0px 0px 10px 0px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ol {
+    margin-left: 25px;
+}
+
+#buscadorAvdo {
+    height: 50px;
+    margin: 0;
+    max-width: 980px;
+    overflow: hidden;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+    width: 96%;
+}
+
+#buscadorAvdo ul {
+    height: 50px;
+    margin: 0;
+    max-width: 950px;
+    padding-top: 15px;
+}
+
+#buscadorAvdo li {
+    display: table-cell;
+    font-size: 0.9em;
+    font-weight: bold;
+    vertical-align: top;
+}
+
+#buscadorAvdo .search-word {
+    max-width: 500px;
+    width: 75%;
+    padding-left: 10px;
+}
+
+#buscadorAvdo #search-selector {
+    color: #FFFFFF;
+    height: 20px;
+    max-width: 71px;
+    padding-right: 5px;
+    padding-top: 9px;
+}
+
+#buscadorAvdo #search-selector span {
+    background: url("../img/ir_buscador_blanco_vertical.png") no-repeat scroll right bottom rgba(0, 0, 0, 0);
+    padding-right: 18px;
+    padding-top: 5px;
+    width: 60%;
+    cursor: pointer;
+}
+
+#select-tipo-texto {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #F8F8F8;
+    color: #000000;
+    margin-left: 14px;
+    margin-top: -65px;
+    position: absolute;
+    width: 55px;
+    display: none;
+    border-radius: 0.5em;
+}
+
+#select-tipo-texto li {
+    font-weight: bold;
+    height: 28px;
+}
+
+#select-tipo-texto li:nth-of-type(odd) {
+  background-color:#dadada;
+  cursor:pointer;
+} 	
+
+#buscadorAvdo #search-selectorAV{
+	height:25px;
+	max-width:380px;
+}
+
+#buscadorAvdo #search-selectorAvdo{
+    background: url("../img/buscador_avdo_buscar.png") no-repeat scroll right top rgba(0, 0, 0, 0);
+    cursor: pointer;
+    height: 25px;
+    width: 72px;
+}
+
+#buscadorAvdo #search-selectorAvdo:hover{
+	background:url("../img/buscador_avdo_buscar_amarillo.png") no-repeat scroll right top transparent;
+}
+
+#buscadorAvdo #buscar{ 
+    margin-left: 87px;
+    margin-top: -17px;
+    width: 150px;	
+}
+
+@media only screen and (min-width: 550px){
+	.search-word {
+	    display: block;
+	}	
+}
+
+#buscadorAvdo select {
+    border: 1px solid #000000;
+    color: #41B6C9;
+    font-weight: bold;
+    height: 25px;
+    padding: 2px;
+    width: 100%; 
+	font-size: 1.2em;
+}
+
+#fondo-cabecera {
+
+    background: url("../img/fondo-cabecera.png") repeat-x scroll 0 0 #000000;
+    border-radius: 0.4em;
+    height: 125px;
+    max-width: 990px;
+    margin: 1px 1px 0;
+
+}
+
+#cabecera {
+	background: none repeat scroll 0 0 #F8F8F8;
+    border-radius: 0.4em 0.5em 0 0;	
+	max-width: 990px;
+	height: 171px;
+	top: 0;
+	margin: 24px auto 0;
+	position: relative;
+	vertical-align:middle;
+	overflow:hidden;
+}
+
+#fondo-cabecera{
+	background: url("../img/fondo-cabecera.png") repeat-x scroll 0 0 #000000;
+	border-radius: 0.4em;
+	height: 125px;
+	max-width: 990px;
+	margin: 1px 1px 0;
+	padding-left:20px;
+	padding-right:20px;
+}
+
+#main_header {
+    color: #000000;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    vertical-align: middle;
+    max-width: 1006px;		
+}
+
+#principal  {
+	margin: 0 auto 0;
+	max-width: 990px;
+	display:block;
+	overflow: hidden;
+	clear:both;
+	background:#FFFFFF;
+	position:relative;
+}
+
+@media only screen and (max-width: 700px){
+	#buscadorAvdo .search-word{
+		display:block;
+		width: 90% !important;
+		margin-bottom:2px;
+	}
+	
+	#fondo-cabecera{
+		height: 170px;
+	}
+	
+	#buscadorAvdo {
+    	height: 100px !important;
+	}
+	
+	#buscadorAvdo #search-selectorAV {
+	
+	    height: 25px;
+	    width: 100% !important;
+	    padding-left: 10px;
+	
+	}			
+}
+
+#cabecera h1 {
+	cursor:pointer;
+}
+
+#cabecera strong {
+	font-size: 1.3em;
+
+}
+
+#cabecera h1 {   
+	max-width: 0px;
+	height: 0px;
+	padding: 0;
+	font-size: 0.1em;
+	float:left;
+	overflow:hidden;
+}
+
+#logo-cabecera{
+	display:inline-block;
+	vertical-align:top;
+}
+
+#fondo-cabecera img{
+	margin-left: 12px;
+}
+
+#sector{
+	color:#2CBEB6;
+	float:left;
+	font-weight:bold;
+	margin-left:10px;
+	margin-top:33px;
+	text-align:left;
+	max-width:173px;
+	font-family:arial,sans-serif;
+}
+
+#cabecera h1 {
+	cursor:pointer;
+}
+
+#cabecera strong {
+	font-size: 1.3em;
+
+}
+
+#buscador{
+	max-width:210px;
+	display:block;
+	overflow:auto;
+	clear:both;
+}
+
+#tx-ttproducts-pi1-search{
+	max-width:170px;
+	display:block;
+	overflow:auto;
+	clear:both;
+	text-align:center;
+	padding:10px 18px 20px 20px;
+	border-right: 1px solid #B1B1B1;
+	border-left: 1px solid #B1B1B1;
+}
+
+#buscador #search-selector{
+	max-width: 164px;
+	display:block;
+	padding:2px;
+	margin-bottom: 4px;
+	border:1px solid #676767;
+}
+#buscador select {
+	max-width: 164px;
+	font-size: 0.8em;
+	color:#333333;
+}
+#buscador .search-word input{
+	max-width: 163px;
+	height:17px;
+	font-size: 0.8em;
+	margin-bottom: 4px;
+	background:#fff;
+	padding-left:5px;
+	padding-top:2px;
+	border:1px solid #676767;
+}
+
+#buscadorAvdo {
+    height: 50px;
+    margin: 0;
+    max-width: 980px;
+    overflow: hidden;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+    width: 96%;
+}
+
+#buscadorAvdo ul {
+    height: 50px;
+    margin: 0;
+    max-width: 950px;
+    padding-top: 15px;
+}
+
+#buscadorAvdo li {
+    display: table-cell;
+    font-size: 0.9em;
+    font-weight: bold;
+    vertical-align: top;
+}
+
+#buscadorAvdo .search-word{
+	max-width:500px;
+	width: 75%;
+	padding-left:10px;
+}
+
+#buscadorAvdo #search-selector{
+    color: #FFFFFF;
+    height: 20px;
+    max-width: 71px;
+    padding-right: 5px;
+    padding-top: 9px;
+}
+
+#buscadorAvdo #search-selector span{
+    background: url("../img/ir_buscador_blanco_vertical.png") no-repeat scroll right bottom rgba(0, 0, 0, 0);
+    padding-right: 18px;
+    padding-top: 5px;
+    width: 70px;
+	cursor:pointer;
+}
+
+#select-tipo-texto{
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #F8F8F8;
+    color: #000000;
+    margin-left: 14px;
+    margin-top: -65px;
+    position: absolute;
+    width: 55px;
+	display:none;
+	border-radius: 0.5em;	
+}
+
+#select-tipo-texto li{
+    font-weight: bold;
+    height: 28px;
+}
+
+#select-tipo-texto li:nth-of-type(odd) {
+  background-color:#dadada;
+  cursor:pointer;
+} 	
+
+#buscadorAvdo #search-selectorAV{
+	height:25px;
+	max-width:380px;
+}
+
+#buscadorAvdo #search-selectorAvdo{
+    background: url("../img/buscador_avdo_buscar.png") no-repeat scroll right top rgba(0, 0, 0, 0);
+    cursor: pointer;
+    height: 25px;
+    width: 72px;
+}
+
+#buscadorAvdo #search-selectorAvdo:hover{
+	background:url("../img/buscador_avdo_buscar_amarillo.png") no-repeat scroll right top transparent;
+}
+
+#buscadorAvdo #buscar{ 
+    margin-left: 87px;
+    margin-top: -17px;
+    width: 150px;	
+}
+
+@media only screen and (min-width: 551px){
+	#menu_desplegable{
+		display:block !important;
+	}
+	
+	.otrosizq{
+		display:block !important;
+	}
+	
+	#sombra_lateral{
+		display:block !important;		
+	}	
+	
+	#menu1 li.li-menu-cabecera{
+		display:none !important;		
+	}	
+}
+
+#buscadorAvdo select {
+    border: 1px solid #000000;
+    color: #41B6C9;
+    font-weight: bold;
+    height: 25px;
+    padding: 2px;
+    width: 100%; 
+	font-size: 1.2em;
+}
+
+#buscadorAvdo input{
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #676767;
+    height: 23px;
+    width: 100%;
+}
+
+div.listado_items {
+	max-width: 100%;
+	overflow: hidden;		
+}
+
+div.listado_items dd {
+	border-bottom: 15px;
+}
+
+.listado_items .minificha {
+    border-bottom: 1px solid #DFDFDF;
+    border-right: 1px solid #DFDFDF;
+    font-size: 0.9em;
+    height: 114px;
+    min-width: 234.5px;
+    overflow: hidden;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-top: 5px;
+    vertical-align: bottom;
+    width: 98%;
+}
+
+.listado_items .minificha3 {
+    border: 1px solid #DFDFDF;
+    border-right: 1px solid #DFDFDF;
+	border-left: 1px solid #DFDFDF;
+    font-size: 0.9em;
+    height: 100%;
+    min-width: 234.5px;
+    overflow: hidden;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-top: 5px;
+    vertical-align: bottom;
+    width: 99%;
+}
+
+div.miniFichaDescripcion {
+    display: block;
+    float: left;
+    padding-bottom: 5px;
+    text-align: left;
+    text-decoration: none;
+	max-width: 170px;
+}	
+
+
+@media only screen and (min-width: 990px){
+	.listado_items .minificha {
+	border-bottom:1px solid #DFDFDF;
+	border-right:1px solid #DFDFDF;
+	float:left;
+	font-size:0.9em;
+	height:114px;
+	overflow: hidden;
+	padding-bottom:5px;
+	padding-left:5px;
+	padding-top:5px;
+	vertical-align:bottom;
+	width:234.5px;
+	}
+	
+	div.miniFichaDescripcion{
+		display:block;
+		float:left;
+		padding-bottom:5px;
+		text-align:left;
+		text-decoration:none;
+		max-width:143px;
+	}
+}
+
+.listado_items .minifichaPestanya {
+border-bottom:1px solid #DFDFDF;
+border-right:1px solid #DFDFDF;
+border-left:1px solid #DFDFDF;
+float:left;
+font-size:0.9em;
+height:114px;
+overflow: hidden;
+padding-bottom:5px;
+padding-left:5px;
+padding-top:5px;
+vertical-align:bottom;
+max-width: 224.7px;
+}
+
+.tituloPestanya{
+    background: none repeat scroll 0 0 #DADADA;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-align: center;
+    max-width: 231px;	
+}
+
+
+div.listado_items div.minificha img { 
+	float: left;
+	margin-right:15px;
+}
+
+div.listado_items div.minificha3 img {
+	float:left;
+	margin-right:15px;
+}
+
+
+
+div.miniFichaDescripcion a{
+	text-decoration:none;
+	display:block;
+	padding-bottom:2px;
+}
+
+div.miniFicha3Descripcion {
+    display: block;
+    float: left;
+    max-width: 55%;
+    padding-bottom: 5px;
+    text-align: left;
+    text-decoration: none;
+}
+
+div.miniFicha3DescripcionObras {
+    display: block;
+    float: left;
+    padding-bottom: 5px;
+    text-align: left;
+    text-decoration: none;
+    max-width: 96px;
+}
+
+div.miniFicha3Descripcion a{
+	text-decoration:none;
+	display:block;
+	padding-bottom:2px;
+}
+
+div.miniFicha3DescripcionObras a{
+	text-decoration:none;
+	display:block;
+	padding-bottom:2px;
+}
+
+div.listado_items dl.dublincore {
+color:#666666;
+float:right;
+font-size:0.9em;
+max-width:110px;
+}
+div.listado_items dd{
+line-height:1.5em;
+} 
+
+
+div.listado_items dd.title{
+margin-bottom:4px;
+font-size:1em;
+
+}
+dl.dublincore dd.title a{
+color:#006666;
+font-weight:bold;
+text-decoration:underline;
+line-height:1.5em;
+}
+
+
+div.listado_items dd.creator, div.listado_items dd.publisher{
+ color:#666666;
+ clear:right;
+}
+
+
+
+div.listado_items dd.creator{
+ color:#333333;
+}
+
+
+ 
+div.listado_items p.precio  {
+	max-width: 134px;
+	float: right;
+	 color:#FF6600;
+	 /*font-size:1.5em;*/
+	 font-weight:bold;
+	 margin-top:15px;
+}
+
+
+
+div.minificha div.formulario{
+	max-width: 134px;
+	float: right;
+	margin:6px 0px 6px 0px;
+} 
+
+.cabecera_listado {
+    color: #000000;
+    padding-bottom: 10px;
+    padding-top: 7px;
+    background: none repeat scroll 0 0 #E6E6E6;
+    border-radius: 0.4em;
+    width: 100%;
+}
+
+.detail_area{
+	color: #FFFFFF;	
+	padding-bottom: 10px;	
+	padding-top: 7px;	
+	background: none repeat scroll 0 0 #000000;	
+	border-radius: 0.4em;	
+	width: 100%;	
+	margin-top: 30px;
+}
+
+.item_rimdb_rating {
+    text-align: right;
+    padding-right: 20px;
+	font-size:2em
+}
+#cuadro_central_detail h3{
+	font-size:2.5em
+}
+.item_year, .item_plot{
+margin-bottom:40px;
+}
+.item_year, .item_plot{
+	font-size:1.8em;
+	width: 95%;
+}
+
+.item_image{
+	width:200px;
+}
+@media only screen and (max-width: 400px){
+	.item_description{
+		display:inline-block !important;
+	}
+	
+	#cuadro_central_detail div.listado_items div.minificha3 img {
+    width: 100%;
+	}
+}
+
+.paginador {
+    clear: both;
+    float: right;
+	margin-bottom:10px;
+}
+
+.paginador ul {
+    display: inline;
+    text-transform: none;
+    padding-left: 10px;
+}
+.paginador ul li {
+    float: left;
+    height: 18px;
+    padding-left: 2px;
+    padding-right: 3px;
+}
